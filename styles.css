@@ -1,0 +1,113 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+}
+/* dummy div to make the main 2 devs placed in center of screen*/
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+/* Top div that shows the balance*/
+.balance-div {
+  height: 70px;
+  width: 340px;
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+  padding: 10px;
+  border-radius: 12px;
+  display: block;
+}
+.balance-div p {
+  line-height: 12px;
+  font-size: 12px;
+  margin: 10px;
+}
+h2 {
+  line-height: 15px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 18px;
+}
+.balance-div .logo {
+  width: 50px;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+/* styles for div that shows the expenses of 1 week*/
+.expenses-div {
+  height: 340px;
+  width: 340px;
+  background-color: hsl(33, 100%, 98%);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  color: hsl(25, 47%, 15%);
+  overflow: hidden;
+}
+@media screen and (width:375px) and (max-width:400px) {
+  .expenses-div {
+    height: 340px;
+    width: 320px;
+  }
+  .balance-div {
+    width: 320px;
+}
+}
+#myChart {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+hr {
+  color: hsl(28, 10%, 53%);
+  width: 94%;
+}
+.expns-details {
+  height: 80px;
+  position: relative;
+}
+.total-amount {
+  position: relative;
+  float: left;
+  max-width: 150px;
+  margin-left: 10px;
+  height: 70px;
+}
+.total-amount p {
+  margin-bottom: 2px;
+  color: hsl(28, 10%, 53%);
+  font-size: 13px;
+}
+.total-amount h1 {
+  margin-top: 1px;
+}
+.percent {
+  position: relative;
+  float: right;
+  max-width: 150px;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-align: right;
+  bottom: 0;
+}
+.percent p {
+  margin-bottom: 1px;
+  color: hsl(25, 47%, 15%);
+  font-size: 13px;
+  font-weight: bold;
+}
+.percent span {
+  margin-top: 2px;
+  color: hsl(28, 10%, 53%);
+  font-size: 13px;
+}
